@@ -28,18 +28,39 @@
 <!-- ═══════════ HEADER ═══════════ -->
 <header>
   <div class="header-logos">
-    <div class="logo-placeholder"><img src="imgs/ASL logo.jpg" alt="ASL logo" /></div>
-    <div class="logo-placeholder"><img src="imgs/uc_logo-removebg-preview.png" alt="University logo" /></div>
-    <div class="logo-placeholder"><img src="imgs/uclm scholarship office.jpg" alt="Scholarship Office logo" /></div>
+      <div class="logo-placeholder"><img src="logo/uc_logo-removebg-preview.png" alt="ASL logo" /></div>
+      <div class="logo-placeholder"><img src="logo/asl_logo-removebg-preview.png" alt="University logo" /></div>
+      <div class="logo-placeholder"><img src="logo/univ_scholarship_s_office_logo-removebg-preview.png" alt="Scholarship Office logo" /></div>
   </div>
   <h1>UCLM Academic Scholar's League</h1>
-  <p class="tagline">Serving with integrity, leading with purpose — for every scholar, every step of the way.</p>
+  <p class="tagline">BATCH BAHANDI:</p>
+  <p>Knowledge as our Treasure, Excellence as our Legacy</p>
   <div class="header-accent"></div>
 </header>
 
 <!-- ═══════════ OFFICERS ═══════════ -->
 <main>
   <section class="shell wide">
+    <div class="officers-intro">
+      <p class="section-eyebrow">ASL Adviser 2026-2027</p>
+      <h2 class="section-title">Meet the Adviser</h2>
+      <p class="sub">Click on the adviser to view his details.</p>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Adviser</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-adviser">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/jaye.png" alt="Photo of Adviser Name" /></div>
+            <div class="officer-name">Allan Jay B. Mendoza</div>
+            <div class="officer-course">LPT - ASL Adviser</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
     <div class="officers-intro">
       <p class="section-eyebrow">ASL Officers 2026-2027</p>
       <h2 class="section-title">Meet the Officers</h2>
@@ -51,6 +72,9 @@
       1. Copy one <button class="officer-card"> block and paste it inside a .officers-row.
       2. Copy the matching <dialog> block at the bottom of this page.
       3. Give both the same id / data-dialog value (e.g. "officer-treasurer").
+      4. To add custom popup details, put a <template class="popup-details"> inside that officer's button
+         and add one <li> for each detail. Example:
+         <template class="popup-details"><li>Course and year</li><li>Achievements</li></template>
       To add a new position, copy a whole .position-block.
     -->
 
@@ -59,11 +83,18 @@
       <div class="officers-row">
         <button class="officer-card" type="button" data-dialog="officer-president">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/president.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/izhel.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Izhel Joy B. Mayol</div>
+            <div class="officer-course">BSA - 2nd Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Former Commissioner on Membership of ASL A.Y. 2025-2026</li>
+            <li>Consistent Dean's List in College of Accountancy A.Y. 2025 - Present</li>
+            <li>Graduated With High Honors and Ranked 4th in their strand in San Remegio National High School S.Y 2019-2025</li>
+            <li>Graduated Batch Valedictorian in Maño Integrated School</li>
+            <li>Values and Ministry Club Chairperson/President in SRNHS A.Y. 2024-2025</li>
+          </template>
         </button>
       </div>
     </div>
@@ -73,11 +104,19 @@
       <div class="officers-row">
         <button class="officer-card" type="button" data-dialog="officer-vp-college">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/vp-college.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/dan.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Dan Pierre O. Pogoy</div>
+            <div class="officer-course">BSIT - 2nd Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Former CCS Representative of ASL A.Y. 2025-2026</li>
+            <li>Consistent Dean's List in College of Computer Studies A.Y. 2025 - Present</li>
+            <li>Former TVL Governor of UCLM SHS Supreme Student Council A.Y. 2024-2025</li>
+            <li>Graduated With High Honors in TVL-ICT strand in UCLM A.Y. 2024-2025</li>
+            <li>Graduated With Honors in Babag National High School A.Y. 2022-2023</li>
+            <li>Former Vice President of LLC Student Federation S.Y. 2018-2019</li>
+          </template>
         </button>
       </div>
     </div>
@@ -87,11 +126,18 @@
       <div class="officers-row">
         <button class="officer-card" type="button" data-dialog="officer-vp-shs">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/vp-shs.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">Strand · Grade</div>
+            <div class="avatar"><img src="officer pictures/noah.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Noah Jade Ponce</div>
+            <div class="officer-course">SHS ABM 12</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Current Executive Communications Minister in Federation of Young Innovators A.Y. 2026-2027</li>
+            <li>Public Information Officer, Layout Artist, and PRC Head in the SUpreme Secondary Learners Government A.Y. 2023-2025</li>
+            <li>Vice President and Representative of Youth for Environment in Schools Organization A.Y. 2023-2025</li>
+            <li>Awarded with With High Honors and Ranked Top 1 Overall in UCLM SHS A.Y. 2026-Present</li>
+            <li>Graduated With Honors and Ranked 1 Overall in Consolacion NHS-DC S.Y. 2021-2025</li>
+          </template>
         </button>
       </div>
     </div>
@@ -101,11 +147,55 @@
       <div class="officers-row">
         <button class="officer-card" type="button" data-dialog="officer-secretary">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/secretary.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/rhainley.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Rhainley Faith C. Illut</div>
+            <div class="officer-course">BSN - 2nd Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Current Level 2 Health and Safety Officer in Nursing Student Body Organization-UCLM Chapter A.Y. 2026-2027</li>
+            <li>Former Nursing Representative of ASL A.Y. 2025-2026</li>
+            <li>Former Sports Head in Einstein Chronicles S.Y. 2023-2025</li>
+            <li>Graduated With High Honors and Ranked 4th in Einstein School Cebu S.Y. 2023-2025</li>
+            <li>Graduated Batch Valedictorian at Bagong Silang Elementary School S.Y. 2018-2019</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Deputy Secretary</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-deputy-secretary">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/cassy.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Cassandra Nicole M. Pepito</div>
+            <div class="officer-course">BSMA - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Commissioner on Membership of ASL A.Y. 2025-2026</li>
+            <li>Former Secretary of ABM Club in Arcelo Memorial National High School A.Y. 2024-2025</li>
+            <li>Graduated With High Honors and Ranked 6th in Arcelo Memorial National High School A.Y. 2024-2025</li>
+            <li>Awarded as an Achiever in Lilo-an Central School S.Y. 2017-2018</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Chief Finance Officer</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-finance">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/princes.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Princes Ann Y. Pongautan</div>
+            <div class="officer-course">BSMA - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Treasurer of ASL A.Y. 2025-2026</li>
+          </template>
         </button>
       </div>
     </div>
@@ -115,33 +205,455 @@
       <div class="officers-row">
         <button class="officer-card" type="button" data-dialog="officer-treasurer">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/treasurer.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/jullane.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Jullane Rose E. Avergonzado</div>
+            <div class="officer-course">BSA - 3rd Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Former Auditor of ASL A.Y. 2025-2026</li>
+            <li>Graduated With High Honors and Ranked 16th in UCLM A.Y. 2023-2024</li>
+            <li>3rd Placer in University of Cebu JPIA Intercampus Accounting Showdown 2025 - Quiz Bowl (The ledger of Origins)</li>
+            <li>2nd Placer University of Cebu - LM Senior High School 3rd Annual Research Forum (Non-STEM Category)</li>
+          </template>
         </button>
       </div>
     </div>
 
     <div class="position-block reveal">
-      <div class="position-label"><span>🏛</span> Communication Officers</div>
+      <div class="position-label"><span>🏛</span> Auditor</div>
       <div class="officers-row">
-        <button class="officer-card" type="button" data-dialog="officer-comms-1">
+        <button class="officer-card" type="button" data-dialog="officer-auditor">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/comms-1.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/kian.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Kian D. Bantoc</div>
+            <div class="officer-course">BSA - 2nd Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Former Commissioner on Membership of ASL A.Y. 2025-2026</li>
+            <li>Consistent Dean's Lister and Ranked 1 in College of Business and Accountancy A.Y. 2025-2026</li>
+            <li>Graduated With High Honors and Ranked 20th in San Remegio National High School A.Y. 2024-2025</li>
+            <li>Graduated With High Honors and Ranked 1st in Lambusan Elementary School A.Y. 2018-2019</li>
+          </template>
         </button>
-        <button class="officer-card" type="button" data-dialog="officer-comms-2">
+      </div>
+    </div>
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Commisioners On Membership</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-commissioner-membership">
           <div class="card-front">
-            <div class="avatar"><img src="imgs/officers/comms-2.jpg" alt="Photo of Officer Name" /></div>
-            <div class="officer-name">Officer Name</div>
-            <div class="officer-course">BS Course · Year</div>
+            <div class="avatar"><img src="officer pictures/josh.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Josh Lawrence Bedrijo</div>
+            <div class="officer-course">BSMT - 1st Year</div>
             <div class="view-hint">Tap to view →</div>
           </div>
+          <template class="popup-details">
+            <li>Awarded with the Senate Gold Medal for Academic Excellence by the Philippine Senate Year 2026</li>
+            <li>Former President of Community Youth Organization, Umapad Chapter Year 2024-2025</li>
+            <li>Graduated With Highest Honor and Ranked 1st inDon Gerardo Ll Ouano Memorial National High School S.Y. 2025-2026</li>
+            <li>Awarded with the Journalist of the Year for Campus Journalism by the Schools Division of Mandaue Year 2023-2026</li>
+            <li>Former Peace Officer of Umapad Elementary School Supreme Student Government S.Y. 2019-2020</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-commissioner-membership-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/jade.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Jade Yacenth B. Toring</div>
+            <div class="officer-course">BSHM - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Hospitality Management Representative of ASL A.Y. 2025-2026</li>
+            <li>Graduated Junior High School with With High Honors in Babag National High School S.Y. 2018-2022</li>
+            <li>Graduated Senior High School with With High Honors in Asian Learning Center Inc. S.Y. 2022-2024</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Head Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-head-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/jarred.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Jarred O. Advincula - Communication</div>
+            <div class="officer-course">BSCPE - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Graduated With High Honors and Ranked 4th in Julian Enad Memorial National High School S.Y. 2025-2026</li>
+            <li>Former President of Barkada Kontra Droga Organization of JEMNHS S.Y. 2025-2026</li>
+            <li>Former Vice-President of Barkada Kontra Droga-Sibonga District Federation: Municipality of Sibonga Chapter S.Y. 2025-2026</li>
+            <li>Former Homeroom Representative of Youth for Environment in Schools - Organization at JEMNHS S.Y. 2023-2025</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-head-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/bj.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">BJ Brent G. Suarez - Media</div>
+            <div class="officer-course">BSTM - 4th Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Journalist of The Chronicles Publication Team-CHTM UCLM Chapter S.Y. 2025-2026</li>
+            <li>Former Auditor of Inahan sa Kanunayng Panabang Youth 2 (IKPY2) Year 2024-2025</li>
+            <li>Graduated With Honors in Pulpogan National High School S.Y. 2020-2021</li>
+            <li>A Facilitator for the UCLM SHS Social Science Month Psychological First Aid Seminar, UCLM Chapter Year 2023</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-head-officer-3">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/eller.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Eller H. Aves- Health and Safety</div>
+            <div class="officer-course">BSTM - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Health and Safety Officer of ASL S.Y. 2024-2025</li>
+            <li>Former BSTM Representative of ASL S.Y. 2025-2026</li>
+            <li>Graduated With Honors in Mandaue City Comprehensive National High School S.Y. 2022-2023</li>
+            <li>Graduated With Honors in Cesar M. Cabahug Elementary School S.Y. 2018-2019</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Communications Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-communication-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/diana.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Diana Therese Lastomen</div>
+            <div class="officer-course">BSCA - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>Former Editor-in-Chief of "The MulaWins", Mulao National High School Official Publication S.Y. 2022-2023</li>
+            <li>Former President of MNHS Supreme Student Government (SSG) S.Y. 2022-2023</li>
+            <li>Dean's Lister, College of Customs Administration, UCLM Chapter 2025-Present</li>
+            <li>Graduated as Batch Valedictorian at Mulao National High School S.Y. 2024-2025</li>
+            <li>Awarded as Champion in DFOT and MFOT Sineliksik Competitions</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-communication-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/aira.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Aira Joy B. Macadat</div>
+            <div class="officer-course">BSTM - 4th Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>FOrmer Circulating Manager of The Chronicles Publication-CHTM, UCLM Chapter S.Y. 2025-2026</li>
+            <li>Graduated Senior High SChool with With Honors in Advanced Institute of Technology, Inc. S.Y. 2021-2023</li>
+            <li>Former Assistant Secretary of AIT Supreme Student Government S.Y. 2022-2023</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-communication-officer-3">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/jasmine.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Jasmine Louise Oyao</div>
+            <div class="officer-course">BSCA - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Media Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-media-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/naomi.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Naomi M. Labangon</div>
+            <div class="officer-course">BSTM - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-media-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/charmay.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Charmay F. Bueno</div>
+            <div class="officer-course">BSED-E - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-media-officer-3">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/mark.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Mark Carlo L. Galindez</div>
+            <div class="officer-course">BSN - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Documentation Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-docu-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/archie.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Archie F. Riveral</div>
+            <div class="officer-course">BSTM - 4th Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-docu-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/dominique.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Dominique D. Quijote</div>
+            <div class="officer-course">BSMT - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-docu-officer-3">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/ashley.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Ashley Jane Oponda</div>
+            <div class="officer-course">BSED-S - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Health and Safety Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-has-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/shyjean.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Shyjean Nicole A. Lopez</div>
+            <div class="officer-course">BSMA - 4th Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-has-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/gracielle.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Gracielle Dawn M. Bueno</div>
+            <div class="officer-course">BSMA - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Representatives</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-1">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/hannah.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Hannah Faith Alas</div>
+            <div class="officer-position">Business and AccountancyRepresentative</div>
+            <div class="officer-course">BSMA - 4th Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-2">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/chiyan.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Chiyan E. Faburada</div>
+            <div class="officer-position">Criminology Representative</div>
+            <div class="officer-course">BSCrim - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-3">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/zyra.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Zyra B. Dionson</div>
+            <div class="officer-position">Customs Administration Representative</div>
+            <div class="officer-course">BSCA - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-4">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/jane.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Jane Raise C. Dinoy</div>
+            <div class="officer-position">Engineering Representative</div>
+            <div class="officer-course">BSEE - 2nd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-5">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/lougee.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Lougee Faustor</div>
+            <div class="officer-position">Hospitality Management Representative</div>
+            <div class="officer-course">BSHM - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-6">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/gave.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Gave Gabrielle Abellana</div>
+            <div class="officer-position">Maritime Education Representative</div>
+            <div class="officer-course">BSMT - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-7">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/mae.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Christian Mae Aniñon</div>
+            <div class="officer-position">Nursing Representative</div>
+            <div class="officer-course">BSN - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-8">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/phoebe.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Phoebe Stephanie O. Taghoy</div>
+            <div class="officer-position">Teacher Education Representative</div>
+            <div class="officer-course">BSED-E - 1st Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-rep-officer-9">
+          <div class="card-front">
+            <div class="avatar"><img src="officer pictures/pj.png" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Paul John Estrella</div>
+            <div class="officer-position">Tourism Management Representative</div>
+            <div class="officer-course">BSTM - 3rd Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+          <template class="popup-details">
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+            <li>placeholder, nothing yet</li>
+          </template>
         </button>
       </div>
     </div>
@@ -288,8 +800,9 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h3>UCLM Academic Scholar's League</h3>
-        <p>This is the official website of the UCLM Academic Scholar's League for A.Y. 2026-2027. Replace this text with a short statement about the organization.</p>
+        <h3>UCLM Academic Scholar's League Website</h3>
+        <p>Note from the creators:</p>
+        <p>This is a semifinal project website for BSIT 2-B Subject: CC-TWRITE21 by Dan Pierre O. Pogoy and Leann N. Baguio. This website portraying the organization does not represent the official views of the organization and only serves as a demonstration for educational purposes.</p>
       </div>
       <div class="footer-col">
         <h4>Contact Us</h4>
