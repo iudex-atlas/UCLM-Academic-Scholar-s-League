@@ -20,10 +20,75 @@ if (burger) {
 }
  
 // ─── Pop-up windows (<dialog>) ───
+function setupOfficerDialog(dlg) {
+  dlg.querySelectorAll('[data-close]').forEach((button) => {
+    button.addEventListener('click', () => dlg.close());
+  });
+  dlg.addEventListener('click', (event) => {
+    if (event.target === dlg) dlg.close();
+  });
+  dlg.addEventListener('close', () => {
+    if (!document.querySelector('dialog.modal[open]')) document.body.classList.remove('no-scroll');
+  });
+}
+
+function createOfficerDialog(id) {
+  const dlg = document.createElement('dialog');
+  dlg.className = 'modal';
+  dlg.id = id;
+  dlg.innerHTML = `
+    <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+    <div class="modal-left">
+      <div class="modal-avatar"><img alt="" /></div>
+      <div class="modal-name"></div>
+      <div class="modal-position"></div>
+    </div>
+    <div class="modal-right">
+      <h3>Details &amp; Background</h3>
+      <ul class="credential-list"></ul>
+    </div>`;
+  document.body.append(dlg);
+  setupOfficerDialog(dlg);
+  return dlg;
+}
+
+function populateOfficerDialog(dlg, card) {
+  const name = card.querySelector('.officer-name')?.textContent.trim() || 'Officer';
+  const image = card.querySelector('.avatar img');
+  const role = card.querySelector('.officer-position')?.textContent.trim()
+    || card.closest('.position-block')?.querySelector('.position-label')?.textContent.trim()
+    || 'Officer';
+  const course = card.querySelector('.officer-course')?.textContent.trim();
+
+  dlg.setAttribute('aria-label', `${name} details`);
+  dlg.querySelector('.modal-name').textContent = name;
+  dlg.querySelector('.modal-position').textContent = role;
+  const modalImage = dlg.querySelector('.modal-avatar img');
+  if (image) {
+    modalImage.src = image.getAttribute('src');
+    modalImage.alt = `Photo of ${name}`;
+    modalImage.style.display = '';
+  }
+
+  const details = dlg.querySelector('.credential-list');
+  details.replaceChildren();
+  const customDetails = card.querySelector('template.popup-details');
+  if (customDetails) {
+    details.append(customDetails.content.cloneNode(true));
+    return;
+  }
+
+  [role, course].filter(Boolean).forEach((detail) => {
+    const item = document.createElement('li');
+    item.textContent = detail;
+    details.append(item);
+  });
+}
+
 document.querySelectorAll('[data-dialog]').forEach((btn) => {
   btn.addEventListener('click', () => {
-    const dlg = document.getElementById(btn.dataset.dialog);
-    if (!dlg) return;
+    const dlg = document.getElementById(btn.dataset.dialog) || createOfficerDialog(btn.dataset.dialog);
+    populateOfficerDialog(dlg, btn);
     dlg.showModal();
     document.body.classList.add('no-scroll');
     const body = dlg.querySelector('.modal-right');
@@ -32,12 +97,7 @@ document.querySelectorAll('[data-dialog]').forEach((btn) => {
 });
  
 document.querySelectorAll('dialog.modal').forEach((dlg) => {
-  dlg.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', () => dlg.close()));
-  // Click on the dark backdrop closes the pop-up
-  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
-  dlg.addEventListener('close', () => {
-    if (!document.querySelector('dialog.modal[open]')) document.body.classList.remove('no-scroll');
-  });
+  setupOfficerDialog(dlg);
 });
  
 // ─── Hide broken photos so the silhouette placeholder shows instead ───
