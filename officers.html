@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Officers — UCLM Academic Scholar's League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<nav aria-label="Primary">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">ASL<span> 26-27</span></a>
+    <button class="burger" id="burger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="officers.html" class="active" aria-current="page">Officers</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="header-logos">
+    <div class="logo-placeholder"><img src="imgs/ASL logo.jpg" alt="ASL logo" /></div>
+    <div class="logo-placeholder"><img src="imgs/uc_logo-removebg-preview.png" alt="University logo" /></div>
+    <div class="logo-placeholder"><img src="imgs/uclm scholarship office.jpg" alt="Scholarship Office logo" /></div>
+  </div>
+  <h1>UCLM Academic Scholar's League</h1>
+  <p class="tagline">Serving with integrity, leading with purpose — for every scholar, every step of the way.</p>
+  <div class="header-accent"></div>
+</header>
+
+<!-- ═══════════ OFFICERS ═══════════ -->
+<main>
+  <section class="shell wide">
+    <div class="officers-intro">
+      <p class="section-eyebrow">ASL Officers 2026-2027</p>
+      <h2 class="section-title">Meet the Officers</h2>
+      <p class="sub">Click on any officer to view their details.</p>
+    </div>
+
+    <!--
+      HOW TO ADD AN OFFICER
+      1. Copy one <button class="officer-card"> block and paste it inside a .officers-row.
+      2. Copy the matching <dialog> block at the bottom of this page.
+      3. Give both the same id / data-dialog value (e.g. "officer-treasurer").
+      To add a new position, copy a whole .position-block.
+    -->
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> President</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-president">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/president.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Vice President for College</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-vp-college">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/vp-college.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Vice President for SHS</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-vp-shs">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/vp-shs.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">Strand · Grade</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Secretary General</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-secretary">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/secretary.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Treasurer</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-treasurer">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/treasurer.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="position-block reveal">
+      <div class="position-label"><span>🏛</span> Communication Officers</div>
+      <div class="officers-row">
+        <button class="officer-card" type="button" data-dialog="officer-comms-1">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/comms-1.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+        <button class="officer-card" type="button" data-dialog="officer-comms-2">
+          <div class="card-front">
+            <div class="avatar"><img src="imgs/officers/comms-2.jpg" alt="Photo of Officer Name" /></div>
+            <div class="officer-name">Officer Name</div>
+            <div class="officer-course">BS Course · Year</div>
+            <div class="view-hint">Tap to view →</div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ═══════════ OFFICER POP-UPS ═══════════ -->
+
+<dialog class="modal" id="officer-president" aria-label="President details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/president.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">President</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-vp-college" aria-label="Vice President for College details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/vp-college.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Vice President for College</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-vp-shs" aria-label="Vice President for SHS details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/vp-shs.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Vice President for SHS</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Strand and grade level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-secretary" aria-label="Secretary General details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/secretary.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Secretary General</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-treasurer" aria-label="Treasurer details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/treasurer.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Treasurer</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-comms-1" aria-label="Communication Officer details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/comms-1.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Communication Officer</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<dialog class="modal" id="officer-comms-2" aria-label="Communication Officer details">
+  <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+  <div class="modal-left">
+    <div class="modal-avatar"><img src="imgs/officers/comms-2.jpg" alt="Photo of Officer Name" /></div>
+    <div class="modal-name">Officer Name</div>
+    <div class="modal-position">Communication Officer</div>
+  </div>
+  <div class="modal-right">
+    <h3>Details &amp; Background</h3>
+    <ul class="credential-list">
+      <li>Course and year level, University of Cebu</li>
+      <li>Previous organizational roles or experience</li>
+      <li>Academic achievements (e.g. Dean's Lister)</li>
+      <li>Projects led or programs organized</li>
+      <li>A short message or advocacy</li>
+    </ul>
+  </div>
+</dialog>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>UCLM Academic Scholar's League</h3>
+        <p>This is the official website of the UCLM Academic Scholar's League for A.Y. 2026-2027. Replace this text with a short statement about the organization.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <span>✉️</span>
+          <a href="mailto:uclmacademicscholarsleague@gmail.com">uclmacademicscholarsleague@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>📧</span>
+          <a href="mailto:inquiries.uclmscholarship@gmail.com">inquiries.uclmscholarship@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>📞</span>
+          <span>+63 XXX XXX XXXX</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61556171207362" target="_blank" rel="noopener" class="social-btn"><span>📘</span> ASL Facebook Page</a>
+          <a href="https://www.facebook.com/profile.php?id=100094912083618" target="_blank" rel="noopener" class="social-btn"><span>📘</span> UCLM Scholarship's Office FB Page</a>
+          <a href="mailto:uclmacademicscholarsleague@gmail.com" class="social-btn"><span>📩</span> ASL Email</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Your Organization Name. All rights reserved. Made with ❤️ for the scholars.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
